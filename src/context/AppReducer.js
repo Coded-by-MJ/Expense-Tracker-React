@@ -1,7 +1,7 @@
-import { act } from "react";
 
 
-export default (state, action) => {
+
+export const appReducer = (state, action) => {
 
     switch (action.type) {
        

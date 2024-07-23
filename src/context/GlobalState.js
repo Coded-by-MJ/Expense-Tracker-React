@@ -1,5 +1,5 @@
 import React, {createContext, useReducer, useEffect} from 'react'
-import AppReducer from "./AppReducer"
+import { appReducer } from "./AppReducer"
 
 
 
@@ -22,7 +22,7 @@ export const GlobalContext = createContext(InitialState);
 
 //Provider Component
 export const GlobalProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AppReducer, {} , InitialState)
+  const [state, dispatch] = useReducer(appReducer, {} , InitialState)
  
 
   useEffect(() => {
